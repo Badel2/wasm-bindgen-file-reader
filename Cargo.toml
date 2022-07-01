@@ -1,0 +1,17 @@
+[package]
+name = "wasm-bindgen-file-reader"
+version = "1.0.0"
+authors = ["Badel2 <2badel2@gmail.com>"]
+edition = "2021"
+license = "GPL-3.0"
+description = """
+Implement Read+Seek for web_sys::File
+"""
+repository = "https://github.com/Badel2/wasm-bindgen-file-reader"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["File", "FileReaderSync"] }
